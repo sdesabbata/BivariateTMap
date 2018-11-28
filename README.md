@@ -6,8 +6,8 @@ The function parameters are:
 
 * *bivmap_dataset*, a SpatialPoligonDataFrame;
 * *bivmap_vars*, a vector of characters containing the name of the two variables;
-* *bivmap_labels*, a vector of characters containing the lables for the two variables, to use in the legend (default is *NA*, in; which case, values from *bivmap_vars* are used);
-* *bivmap_style*, classification type for the bins (detault is *'quantile'*);
+* *bivmap_labels*, a vector of characters containing the labels for the two variables, to use in the legend (default is *NA*, in; which case, values from *bivmap_vars* are used);
+* *bivmap_style*, classification type for the bins (default is *'quantile'*);
 * *bivmap_scale*, whether to use a scale bar (default is *FALSE*).
 
 ## Requirements

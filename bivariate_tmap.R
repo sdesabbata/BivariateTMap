@@ -21,7 +21,7 @@ bivariate_choropleth <- function (
     # Function parameters
     bivmap_dataset,         # A SpatialPoligonDataFrame
     bivmap_vars,            # A vector of characters containing the name of the two variables
-    bivmap_labels=NA,       # A vector of characters containing the lables for the two variables, to use in the legend
+    bivmap_labels=NA,       # A vector of characters containing the labels for the two variables, to use in the legend
     bivmap_style='quantile',# Classification type for the bins
     bivmap_scale=FALSE      # Use a scale bar
 
