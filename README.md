@@ -1,6 +1,6 @@
 # Bivariate tmp
 
-The *bivariate_tmap.R* script defines a simple function named *bivariate_choropleth* which uses the *tmap* library to create a bivariate choropleth map (using a color scheme fro [Joshua Stevens's fantastic blog post](http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/)).
+The *bivariate_tmap.R* script defines a simple function named *bivariate_choropleth* which uses the [*tmap*](https://cran.r-project.org/web/packages/tmap/) library to create a bivariate choropleth map (using a color scheme fro [Joshua Stevens's fantastic blog post](http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/)).
 
 The function parameters are:
 
@@ -14,13 +14,13 @@ The function parameters are:
 
 The function was developed using R version 3.5.1, and it requires the following R libraries:
 
-* sp
-* spdep
-* tmap
-* classInt
-* grid
-* gridExtra
-* lattice
+* [sp](https://cran.r-project.org/web/packages/sp/)
+* [spdep](https://cran.r-project.org/web/packages/spdep/)
+* [tmap](https://cran.r-project.org/web/packages/tmap/)
+* [classInt](https://cran.r-project.org/web/packages/classInt/)
+* [grid](https://cran.r-project.org/web/packages/grid/)
+* [gridExtra](https://cran.r-project.org/web/packages/gridExtra/)
+* [lattice](https://cran.r-project.org/web/packages/lattice/)
 
 ## Example
 
