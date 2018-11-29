@@ -1,14 +1,16 @@
 # Bivariate tmap
 
-The *bivariate_tmap.R* script defines a simple function named *bivariate_choropleth* which uses the [*tmap*](https://cran.r-project.org/web/packages/tmap/) library to create a bivariate choropleth map (using a color scheme fro [Joshua Stevens's fantastic blog post](http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/)). 
+The *bivariate_tmap.R* script defines a simple function named *bivariate_choropleth* which uses the [*tmap*](https://cran.r-project.org/web/packages/tmap/) library to create a bivariate choropleth map (using a color scheme fro [Joshua Stevens's fantastic blog post](http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/)) and plot it including a legend created using the [grid](https://stat.ethz.ch/R-manual/R-devel/library/grid/html/Grid.html) library.  
 
-The function parameters are:
+The *bivariate_choropleth* function parameters are:
 
 * *bivmap_dataset*, a SpatialPoligonDataFrame;
 * *bivmap_vars*, a vector of characters containing the name of the two variables;
 * *bivmap_labels*, a vector of characters containing the labels for the two variables, to use in the legend (default is *NA*, in; which case, values from *bivmap_vars* are used);
 * *bivmap_style*, classification type for the bins (default is *'quantile'*);
 * *bivmap_scale*, whether to use a scale bar (default is *FALSE*).
+
+The *bivariate_choropleth* function uses a function named *get_bivariate_choropleth* which simply creates the map (without the legend) and returns the related object. This function can also be used directly for further manipulation of the map.
 
 ## Requirements
 
@@ -18,7 +20,7 @@ The function was developed using R version 3.5.1, and it requires the following 
 * [spdep](https://cran.r-project.org/web/packages/spdep/)
 * [tmap](https://cran.r-project.org/web/packages/tmap/)
 * [classInt](https://cran.r-project.org/web/packages/classInt/)
-* [grid](https://cran.r-project.org/web/packages/grid/)
+* [grid](https://stat.ethz.ch/R-manual/R-devel/library/grid/html/Grid.html)
 * [gridExtra](https://cran.r-project.org/web/packages/gridExtra/)
 * [lattice](https://cran.r-project.org/web/packages/lattice/)
 
